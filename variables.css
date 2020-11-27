@@ -1,0 +1,27 @@
+:root {
+    /* Font sizes */
+        --large-header: 60px;
+        --small-text: 16px;
+    
+    /* FONT COLORS */
+        --text-color: #EEEEEE;
+        --dark-text: #212121;
+        --nav-items-color: rgb(151, 151, 156);
+        --nav-items-active: #F2F3F7;
+    
+    /* BACKGROUND COLORS*/
+        --dark-background: #2D2D2D;
+        --grey-background: #414141;
+        --page-title-grey: rgba(46,46,46,0.6);
+        --green-background: #34FFC8;
+        
+    
+    /*SHADOWS*/
+        --card-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+        
+    /*ELEMENT SIZES*/
+        --nav-height: 5vh;
+        --hero-height: 75vh;
+        --readme-width-short: 125px;
+        --readme-width-long: 200px;
+    }

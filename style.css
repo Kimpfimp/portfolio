@@ -1,0 +1,199 @@
+/*
+Theme Name: Portfolio
+Text Domain: Modern dark portfolio
+Version: 1.0
+Description: A modern stylized portfolio theme with some lively elements
+Tags: modern, dark, responsive, unique
+Author: Kim Siebeneicher
+Author: https://github.com/kimpfimp
+*/
+
+@import "variables.css";
+
+* {
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+img {
+    border-radius: 100%;
+    width: 300px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  var(--dark-background);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    font-size: var(--small-text);
+    width: 100%;
+    height: var(--nav-height);
+    margin: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links {
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > li a {
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    color: var(--nav-items-color);
+    transition: 0.2s;
+}
+
+.nav-links li a:hover {
+    border-bottom: 2px solid var(--green-background);
+    color: var(--nav-items-active);
+}
+
+a {
+        text-decoration: none;
+}
+
+.button {
+    background-color: var(--green-background);
+    color: var(--dark-text);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    position: relative;
+    left: 15%;
+}
+
+#hero {
+    height: var(--hero-height);
+}
+
+#hero > img {
+    height: inherit;
+    width: 100vw;
+}
+
+#hero > span {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    font-size: var(--large-header);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50%;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    position: relative;
+    background-color: var(--page-title-grey);
+    height: 15vh;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+.page-title > h1 {
+    opacity: 1;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+section:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.card {
+    background-color: var(--grey-background);
+    height: 100%;
+    height: 150px;
+    width: 600px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+}
+
+.card h1 {
+    margin: 0;
+}
+
+.readabout {
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.category {
+    position: absolute;
+    transform: translateX(calc(0px - var(--readme-width-long)));
+    transition: 0.1s;
+}
+
+.category-short {
+    position: absolute;
+    transform: translateX(calc(0px - var(--readme-width-short)));
+    transition: 0.1s;
+}
+
+.card:hover h1 .readabout {
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.card:hover h1 .category {
+    transform: translateX(10px);
+    transition-delay: 0.1s;
+}
+
+.card:hover h1 .category-short {
+    position: absolute;
+    transform: translateX(5px);
+}
+
+svg {
+    width: 300px;
+    height: 300px;
+}
+
+footer > div {
+    height: 15vh;
+    background-color: var(--dark-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
