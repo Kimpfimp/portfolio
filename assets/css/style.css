@@ -17,6 +17,7 @@ Author: https://github.com/kimpfimp
 
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
     color: var(--light-text-color);
 }
 
@@ -52,7 +53,6 @@ body {
     align-items: center;
     background-color:  var(--background);
     overflow-x: hidden;
-    font-family: 'Mulish', sans-serif;
 }
 
 .no-scroll {
@@ -107,13 +107,10 @@ nav {
 
     /* MOBILE MENU */
 
-#toggle {
-    display: none;
-    font-size: 2rem;
-}
-
+#toggle,
 #home-btn {
     display: none;
+    width: 30px;
 }
 
 #popout {
@@ -133,11 +130,8 @@ nav {
 #close {
 	position: absolute;
 	top: 2%;
-	left: 21%;
-}
-
-.fa-times {
-    font-size: 2rem;
+    left: 21%;
+    width: 30px;
 }
 
 .nav-links-mobile {
@@ -213,7 +207,6 @@ main {
     align-items: center;
 	width: 100vw;
 	position: relative;
-    overflow-x: hidden;
 }
 
 h2 {
@@ -336,7 +329,8 @@ footer > div {
 #wpcf7-f273-p364-o1 {
 	width: 75vw;
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    height: 600px;
 }
 
 .fas.fa-long-arrow-alt-up:active {

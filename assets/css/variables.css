@@ -1,0 +1,70 @@
+:root {
+    /* Font sizes */
+        --large-header: 6rem;
+        --h1-size: 3rem;
+        --h2-size: 2.5rem;
+        --h3-size: 2.5rem;
+        --h4-size: 2rem;
+        --nav-text: 1rem;
+        --paragraph-text: calc(var(--h2-size) / 1.5);
+        --paragraph-line-height: calc(var(--paragraph-text) * 3);
+    
+    /* FONT COLORS */
+        
+    
+        --light-text-color: #EEEEEE;
+        --dark-text-color: #212121;
+        --nav-items-color: rgb(151, 151, 156);
+        --nav-items-active: #ffffff;
+    
+    /* BACKGROUND COLORS*/
+        
+
+        --background: #2D2D2D;
+        --nav-background: rgba(0, 0, 0, 0.80);
+        --elev1: #2D2D2D;
+        --elev2: rgba(255, 255, 255, 0.07);
+        --elev3: rgba(255, 255, 255, 0.08);
+        --grey-background: #2D2D2D;
+        --page-title-grey: rgba(46,46,46,0.6);
+        --primary-color: #6a46f7 ;
+        --primary-hover: #9683E1;
+        --header-gradient:  linear-gradient(0deg, var(--background) 90%, #2d2d2d00);
+        --border-radius: 10px;
+
+        /*--dark-background: #2D2D2D;
+        --grey-background: #414141;
+        --page-title-grey: rgba(46,46,46,0.6);
+        --primary-color: #6002ee;
+        --primary-hover: #9965f4;*/
+        
+    /*SHADOWS*/
+        --card-shadow: 1px 1px 7px rgba(0,0,0,0.8);
+        --card-shadow-hover: 1px 1px 14px rgba(0,0,0,0.8);
+        
+    /*ELEMENT SIZES*/
+        --nav-height: 100px;
+        --hero-height: 100vh;
+        --readme-width-short: 98px;
+        --readme-width-long: 156px;
+        --page-title-height: 10vw;
+        --main-height: calc(100vh - var(--footer-height));
+        --footer-height: 15vh;
+        --article-height: 50vh;
+        --bubble-height: 100rem;
+
+    /*POSITIONS AND MARGINS*/
+        --top-margin: -139vh;
+    }
+
+
+@media (max-width: 850px) {
+    :root {
+    --large-header: 6rem;
+    --h1-size: 1.5rem;
+    --h2-size: 1.5rem;
+    --h3-size: 1.25rem;
+    --h4-size: 1rem;
+    --nav-text: 1rem;
+    }
+}

@@ -1,27 +1,32 @@
 :root {
     /* Font sizes */
-        --large-header: 60px;
+        --large-header: 6vw;
+        --h1-size: 3vw;
+        --h2-size: 2.5vw;
         --small-text: 16px;
     
     /* FONT COLORS */
-        --text-color: #EEEEEE;
-        --dark-text: #212121;
+        --light-text-color: #EEEEEE;
+        --dark-text-color: #212121;
         --nav-items-color: rgb(151, 151, 156);
-        --nav-items-active: #F2F3F7;
+        --nav-items-active: #ffffff;
     
     /* BACKGROUND COLORS*/
         --dark-background: #2D2D2D;
         --grey-background: #414141;
         --page-title-grey: rgba(46,46,46,0.6);
-        --green-background: #34FFC8;
+        --primary-color:#6c63ff;
         
     
     /*SHADOWS*/
         --card-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
         
     /*ELEMENT SIZES*/
-        --nav-height: 5vh;
-        --hero-height: 75vh;
-        --readme-width-short: 125px;
-        --readme-width-long: 200px;
+        --nav-height: 100px;
+        --hero-height: 100vh;
+        --readme-width-short: 98px;
+        --readme-width-long: 156px;
+        --page-title-height: 10vw;
+        --main-height: calc(100vh - var(--footer-height));
+        --footer-height: 15vh;
     }
